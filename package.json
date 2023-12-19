@@ -1,0 +1,20 @@
+{
+  "name": "playwright-cucumber-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cucumber-js -f json:test-report/cucumber_report.json && node generate-report.js && npm run html-report",
+    "generate-report": "node generate-report.js",
+    "html-report": "npm run generate-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.0.1",
+    "@playwright/test": "^1.40.1",
+    "@types/node": "^20.10.5",
+    "cucumber-html-reporter": "^7.1.1"
+  }
+}
